@@ -12,24 +12,43 @@
 </head>
 <body>
 
-    <header>
-        <h1>Jack Donaldson</h1>
-        <img src="links/profileimg.PNG" alt="Profile Image">
-    </header>
+    <div class="navbar">
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </nav>
+    </div>
 
-    <section class="graphic">
-        <h2>Graphic Design</h2>
-        <img src="" alt="">
-    </section>
+    <div class="home" id="home">
+        <header class="hero">
+            <h1>Jack Donaldson</h1>
+            <img src="links/profileimg.PNG" alt="Profile Image">
+        </header>
+    </div>
 
-    <section class="typography">
-        <h2>Typography</h2>
-        <img src="" alt="">
-    </section>
-    
-    <section class="misc">
-        <h2>Misc</h2>
-        <img src="" alt="">
+    <div class="projects" id="projects">
+
+        <section class="graphic">
+            <h2>Graphic Design</h2>
+            <div class="card card_graphic"></div>
+        </section>
+
+        <section class="typography">
+            <h2>Typography</h2>
+            <img src="" alt="">
+            <div class="card card_typography"></div>
+        </section>
+        
+        <section class="misc">
+            <h2>Misc</h2>
+            <img src="" alt="">
+            <div class="card card_misc"></div>
+        </section>
+    </div>
+
+    <section class="contact" id="contact">
+
     </section>
 
     <script src="scripts/script.js"></script>  
