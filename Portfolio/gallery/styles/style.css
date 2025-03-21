@@ -1,0 +1,58 @@
+/* variables */
+:root {
+  --background: black;
+  --mainColor: white;
+}
+
+/* Grid setup */
+.grid {
+  margin: auto;
+  width: 75vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 25vh 1fr;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  row-gap: 1em;
+}
+.grid .masthead {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+.grid .nav {
+  grid-column: 1/2;
+  grid-row: 2/-1;
+}
+.grid .projects {
+  grid-column: 2/3;
+  grid-row: 2/-1;
+}
+
+/* grid end */
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects img {
+  width: 250px;
+  height: 250px;
+}
+.projects img:hover {
+  transform: scale(1.05) rotate(360deg);
+  transition: ease 10s;
+}
+
+.masthead {
+  width: 100%;
+  background-image: url("/Portfolio/gallery/links/profileimg.PNG");
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 1em;
+}/*# sourceMappingURL=style.css.map */
