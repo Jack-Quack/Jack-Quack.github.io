@@ -1,0 +1,75 @@
+$color-darkest: #0f0a0f;
+$color-dark: #5d4778;
+$color-medium: #7f689a;
+$color-bright: #a183b8;
+$color-brightest: #ece7f0;
+
+body {
+    background-color: $color-medium;
+}
+
+.jacquard-12-regular {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.grid__home {
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.masthead__home {
+    background-image: url("../links/profileimg.PNG");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    h1 {
+        position: absolute;
+        top: 50vh;
+        width: 100%;
+        text-align: center;
+        font-family: "Jacquard 12";
+        color: $color-brightest;
+        font-size: 13em;
+        margin: auto;
+        transition: linear .5s;
+    }
+    h1:hover {
+        transform: scale(1.01);
+        filter: drop-shadow(5px 5px 5px #0f0a0f);
+    }
+}
+
+.nav__home {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    a {
+        padding: 1rem;
+        text-align: center;
+        font-family: "Jacquard 12";
+        font-size: 2em;
+        text-decoration: none;
+        color: black;
+        transition: ease .25s;
+    }
+    a:hover {
+        color: $color-brightest;
+        text-decoration: underline;
+        filter: drop-shadow(5px 5px 5px #0f0a0f);
+    }
+}
+
+.gallery__home {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
